@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ffe5ec, #ffc2d1);
+}
+
+.card {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.15);
+    width: 300px;
+}
+
+.cat-avatar {
+    font-size: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, font-size 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Класс для анимации прыжка кота */
+.bounce {
+    animation: jump 0.3s ease;
+}
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+h1 {
+    color: #4a4a4a;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff477e;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(255, 71, 126, 0.3);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff5c8a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 71, 126, 0.4);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#message {
+    margin-top: 25px;
+    font-size: 18px;
+    font-style: italic;
+    color: #6c757d;
+    min-height: 27px;
+}
